@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Metodlari Qo'llanmasi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Array Metodlari Qo'llanmasi</h1>
+    <p>JavaScript array metodlarini o'rganing va misollarni ko'ring.</p>
+  </header>
+
+  <main>
+    <!-- Metod: map -->
+    <section class="method">
+      <h2>map()</h2>
+      <p><code>map()</code> metodi arrayning har bir elementiga funksiya qo'llaydi va natijada yangi array qaytaradi.</p>
+      <div class="code-example">
+        <h3>Misol:</h3>
+        <pre><code>
+const sonlar = [1, 2, 3, 4];
+const kvadrat = sonlar.map(son => son * son);
+console.log(kvadrat); // [1, 4, 9, 16]
+        </code></pre>
+      </div>
+    </section>
+
+    <!-- Metod: filter -->
+    <section class="method">
+      <h2>filter()</h2>
+      <p><code>filter()</code> metodi arraydan testni muvaffaqiyatli o'tgan elementlarni tanlab oladi va yangi array yaratadi.</p>
+      <div class="code-example">
+        <h3>Misol:</h3>
+        <pre><code>
+const sonlar = [1, 2, 3, 4];
+const juft = sonlar.filter(son => son % 2 === 0);
+console.log(juft); // [2, 4]
+        </code></pre>
+      </div>
+    </section>
+
+    <!-- Metod: reduce -->
+    <section class="method">
+      <h2>reduce()</h2>
+      <p><code>reduce()</code> metodi array elementlariga funksiya qo'llaydi va bitta yakuniy qiymat hosil qiladi.</p>
+      <div class="code-example">
+        <h3>Misol:</h3>
+        <pre><code>
+const sonlar = [1, 2, 3, 4];
+const summa = sonlar.reduce((jam, son) => jam + son, 0);
+console.log(summa); // 10
+        </code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+   
+    <div class="footer__link">
+        <p>© 2024 Array Metodlari Qo'llanmasi.</p>
+        <a style="color: rgb(255, 85, 0);" href="https://www.instagram.com/oktmv91/profilecard/?igsh=MXVqejdpZDhpdmM2ZQ=="><i class="fa-brands fa-instagram"></i></a>
+        <a style="color: dodgerblue;" href="https://t.me/@oktmv23"><i class="fa-brands fa-telegram"></i></a>
+        <div>
+            <a class="footer__number" href="tel:+998885431775">+998885431775</a>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
